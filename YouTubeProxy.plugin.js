@@ -15,7 +15,6 @@ module.exports = class YouTubeProxy {
 		this.clock = setInterval(function () {
 			const re = /https:\/\/www.youtube.com\/embed\/([a-zA-Z0-9_-]{11})?/;
 			for (let frame of document.getElementsByTagName("iframe")) {
-				console.log(frame.src);
 				let match = re.exec(frame.src);
 				if (match != null) {
 					let id = match[1];
