@@ -1,8 +1,8 @@
-# discordytproxy
-
-Ridiculously simple [BetterDiscord](https://betterdiscord.app/) plugin that allows playing restricted youtube videos.
+# discord-youtube-embed-fix
 
 ## What it does:
+
+Patch YouTube embed links with a proxy, letting you easily play restricted videos within Discord.
 
 ![Example of plugin usage](example.png)
 

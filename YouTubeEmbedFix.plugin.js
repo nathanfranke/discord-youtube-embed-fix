@@ -1,7 +1,7 @@
 /**
- * @name YouTubeProxy
+ * @name YouTubeEmbedFix
  * @author nathanfranke
- * @description Changes YouTube embed links to a proxy, letting you play restricted videos easily.
+ * @description Patch YouTube embed links with a proxy, letting you easily play restricted videos within Discord.
  * @version 1.0.0
  * @authorId 201537559740940288
  * @donate https://paypal.me/natwf
