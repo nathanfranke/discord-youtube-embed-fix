@@ -19,7 +19,14 @@
 	<iframe id="frame"></iframe>
 	<script>
 		const frame = document.getElementById('frame');
-		frame.src = `https://www.youtube.com/embed/${window.location.search.substring(1)}?autoplay=1`;
+		const fragment = window.location.hash;
+		const match = /^#([A-Za-z0-9-_]{11})/.exec(fragment);
+		if (match != null) {
+			const id = match[1];
+			frame.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+		} else {
+			alert("Invalid URL Fragment. Should be an 11-character YouTube ID.");
+		}
 	</script>
 </body>
 

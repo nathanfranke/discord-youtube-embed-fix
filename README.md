@@ -14,4 +14,4 @@ Patch YouTube embed links with a proxy, letting you easily play restricted video
 4) Copy that file to the folder you opened in step 2.
 5) Enable the plugin in Discord settings.
 
-YouTube embeds are shown through a static website proxy, hosted here with GitHub pages.
+**Security Note**: YouTube embeds are shown through a static website proxy, hosted here with GitHub pages. Your Discord client will make a GET request to this server. No personal data is sent or stored with this request. The **YouTube Video ID** is contained in the window fragment (After `#`), which is **not sent to the server**.

@@ -5,7 +5,7 @@
  * @version 1.0.0
  * @authorId 201537559740940288
  * @donate https://paypal.me/natwf
- * @source https://github.com/nathanfranke/discordytproxy
+ * @source https://github.com/nathanfranke/discord-youtube-embed-fix
  */
 
 module.exports = class YouTubeProxy {
@@ -18,7 +18,7 @@ module.exports = class YouTubeProxy {
 				let match = re.exec(frame.src);
 				if (match != null) {
 					let id = match[1];
-					frame.src = `https://nathanfranke.github.io/discordytproxy/?${id}`;
+					frame.src = `https://nathanfranke.github.io/discord-youtube-embed-fix/#${id}`;
 				}
 			}
 		}, 200, 200);
